@@ -1,0 +1,54 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.top-bg-image {
+    background-image: url(/images/bg-pattern-top-mobile.svg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 374px;
+    height: 232px;
+}
+
+.bottom-bg-image {
+    background-image: url(/images/bg-pattern-bottom-mobile.svg);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    width: 375px; 
+    height: 503px;
+}
+
+@media only screen and (min-width: 375px) {
+    .top-bg-image {
+        background-image: url(/images/bg-pattern-top-mobile.svg);
+        width: 374px;
+        height: 232px;
+    }
+    .bottom-bg-image {
+        background-image: url(/images/bg-pattern-bottom-desktop.svg);
+        width: 720px; 
+        height: 673px;
+    }
+}
+
+@media only screen and (min-width: 720px) {
+    .top-bg-image {
+        background-image: url(/images/bg-pattern-top-desktop.svg);
+        width: 584px;
+        height: 362px;
+    }
+    
+    .bottom-bg-image {
+        background-image: url(/images/bg-pattern-bottom-desktop.svg);
+        width: 1085px; 
+        height: 673px;
+    }
+}
