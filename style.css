@@ -41,6 +41,13 @@
     height: 503px;
 }
 
+main {
+    width: 88%;
+    max-width: 400px;
+    display: grid;
+    gap: 1.8rem;
+    margin: auto;
+}
 /************** MEDIA QUERY (TABLET) **************/
 @media only screen and (min-width: 375px) {
     .top-bg-image {
@@ -57,6 +64,16 @@
 
 /************** MEDIA QUERY (DESKTOP) **************/
 @media only screen and (min-width: 720px) {
+    main {
+        width: 75%;
+        max-width: 1200px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .testimonial {
+        grid-column: span 2;
+    }
+
     .top-bg-image {
         background-image: url(/images/bg-pattern-top-desktop.svg);
         width: 584px;
