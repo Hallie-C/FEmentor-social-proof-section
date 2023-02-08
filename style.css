@@ -1,9 +1,24 @@
+/************** UNIVERSAL SETTINGS **************/
 *,
 *::before,
 *::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+:root {
+    --ff-primary: 'League Spartan', sans-serif;
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-bold: 700;
+    --fs-primary: 15px;
+
+    --clr-primary-magenta: hsl(300, 43%, 22%);
+    --clr-primary-pink: hsl(333, 80%, 67%);
+    --clr-neutral-darkgrayMagenta: hsl(303, 10%, 53%);
+    --clr-neutral-lightgrayMagenta: hsl(300, 24%, 96%);
+    --clr-neutral-white: hsl(0, 0%, 100%);
 }
 
 .top-bg-image {
@@ -26,6 +41,7 @@
     height: 503px;
 }
 
+/************** MEDIA QUERY (TABLET) **************/
 @media only screen and (min-width: 375px) {
     .top-bg-image {
         background-image: url(/images/bg-pattern-top-mobile.svg);
@@ -39,6 +55,7 @@
     }
 }
 
+/************** MEDIA QUERY (DESKTOP) **************/
 @media only screen and (min-width: 720px) {
     .top-bg-image {
         background-image: url(/images/bg-pattern-top-desktop.svg);
